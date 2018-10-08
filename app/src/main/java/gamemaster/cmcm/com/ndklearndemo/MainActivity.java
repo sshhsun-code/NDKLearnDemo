@@ -8,6 +8,8 @@ import android.widget.TextView;
 
 import java.util.Locale;
 
+import test.c.use.java.method.Man;
+
 public class MainActivity extends AppCompatActivity {
 
     // Used to load the 'native-lib' library on application startup.
@@ -30,6 +32,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 HelloNdk.printLog("view info" + view);
                 hexCodec();
+                testMan();
             }
         });
     }
@@ -42,6 +45,23 @@ public class MainActivity extends AppCompatActivity {
         for (byte aByte : bytes) {
             Log.d("sunqi_log", "onCreate: byte ==> " + String.format(Locale.CANADA, "%x",aByte ));
         }
+    }
+
+    private void testMan() {
+        Man man = new Man();
+        Log.e("sunqi_log",  " 修改前 ::::: " + man.name);
+
+        String access = man.accessField();
+
+        Log.e("sunqi_log",  " 修改后 ::::: " + man.name);
+
+
+        Log.e("sunqi_log",  " 修改前 ::::: " + Man.age);
+
+        String strFromJNI = man.stringFromJNI();
+
+
+        Log.e("sunqi_log",  " 修改前 ::::: " + Man.age);
     }
 
     /**

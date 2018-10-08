@@ -37,6 +37,15 @@ add_library( # Sets the name of the library.
              # Provides a relative path to your source file(s).
              src/main/cpp/codec.cpp )
 
+add_library( # Sets the name of the library.
+             man-lib
+
+             # Sets the library as a shared library.
+             SHARED
+
+             # Provides a relative path to your source file(s).
+             src/main/cpp/man-lib.cpp )
+
 # Searches for a specified prebuilt library and stores the path as a
 # variable. Because CMake includes system libraries in the search path by
 # default, you only need to specify the name of the public NDK library
@@ -66,6 +75,11 @@ target_link_libraries( # Specifies the target library.
                        ${log-lib} )
 target_link_libraries( # Specifies the target library.
                        codec
+                       # Links the target library to the log library
+                       # included in the NDK.
+                       ${log-lib} )
+target_link_libraries( # Specifies the target library.
+                       man-lib
                        # Links the target library to the log library
                        # included in the NDK.
                        ${log-lib} )

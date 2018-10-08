@@ -1,0 +1,8 @@
+//
+// Created by CM on 2018/10/8.
+//
+
+#ifndef NDKLEARNDEMO_MAN_LIB_H
+#define NDKLEARNDEMO_MAN_LIB_H
+
+#endif //NDKLEARNDEMO_MAN_LIB_H
