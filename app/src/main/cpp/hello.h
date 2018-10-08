@@ -1,0 +1,8 @@
+//
+// Created by CM on 2018/10/8.
+//
+
+#ifndef NDKLEARNDEMO_HELLO_H
+#define NDKLEARNDEMO_HELLO_H
+
+#endif //NDKLEARNDEMO_HELLO_H

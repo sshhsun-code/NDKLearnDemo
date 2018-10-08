@@ -1,0 +1,8 @@
+//
+// Created by CM on 2018/10/8.
+//
+
+#ifndef NDKLEARNDEMO_CODEC_H
+#define NDKLEARNDEMO_CODEC_H
+
+#endif //NDKLEARNDEMO_CODEC_H
